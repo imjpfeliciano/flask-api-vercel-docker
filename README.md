@@ -18,6 +18,7 @@ The API will be executed and you will have this available endpoints:
 
 - GET `http://localhost:5001/` - Will return a sample json with `Hello, World!` message
 - GET `http://localhost:5001/api/` - Will return a sample json with `Hello, API!` message
+- GET `http://localhost:5001/api/docs` - Provides Swagger UI with all information about available endpoints
 
 ### Deployment
 
