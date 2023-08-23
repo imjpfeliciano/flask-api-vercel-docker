@@ -14,7 +14,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/Hello"
+                                    "$ref": "#/components/schemas/Hello"
                                 }
                             }
                         }
@@ -31,7 +31,7 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/components/HelloApi"
+                                    "$ref": "#/components/schemas/HelloApi"
                                 }
                             }
                         }
@@ -41,27 +41,29 @@
         }
     },
     "components": {
-        "Hello": {
-            "type": "object",
-            "required": [
-                "message"
-            ],
-            "properties": {
-                "message": {
-                    "type": "string",
-                    "example": "Hello World!"
+        "schemas": {
+            "Hello": {
+                "type": "object",
+                "required": [
+                    "message"
+                ],
+                "properties": {
+                    "message": {
+                        "type": "string",
+                        "example": "Hello World!"
+                    }
                 }
-            }
-        },
-        "HelloApi": {
-            "type": "object",
-            "required": [
-                "message"
-            ],
-            "properties": {
-                "message": {
-                    "type": "string",
-                    "example": "Hello API!"
+            },
+            "HelloApi": {
+                "type": "object",
+                "required": [
+                    "message"
+                ],
+                "properties": {
+                    "message": {
+                        "type": "string",
+                        "example": "Hello API!"
+                    }
                 }
             }
         }
