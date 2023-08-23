@@ -1,0 +1,14 @@
+version: '3'
+services:
+  flask-api:
+    build: .
+    container_name: "flask-api"
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_DEBUG=true
+      - FLASK_APP=/app/api/index.py
+      - PORT=5001
+      - HOST=0.0.0.0
