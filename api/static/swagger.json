@@ -1,0 +1,68 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Swagger Petstore",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "description": "Returns a sample JSON Hello World response.",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON Hello World response",
+                        "schema": {
+                            "$ref": "#/definitions/Hello"
+                        }
+                    }
+                }
+            }
+        },
+        "/api": {
+            "get": {
+                "description": "Returns a sample JSON Hello API response.",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "JSON Hello API response",
+                        "schema": {
+                            "$ref": "#/definitions/HelloApi"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {
+        "Hello": {
+            "type": "object",
+            "required": [
+                "message"
+            ],
+            "properties": {
+                "message": {
+                    "type": "string",
+                    "example": "Hello World!"
+                }
+            }
+        },
+        "HelloApi": {
+            "type": "object",
+            "required": [
+                "message"
+            ],
+            "properties": {
+                "message": {
+                    "type": "string",
+                    "example": "Hello API!"
+                }
+            }
+        }
+    }
+}
