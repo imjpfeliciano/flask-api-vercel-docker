@@ -2,8 +2,6 @@
 
 Boilerplate that creates a Flask API and runs in docker-compose.
 
-
-
 ### Requirements
 
 - Docker
