@@ -8,15 +8,13 @@
         "/": {
             "get": {
                 "description": "Returns a sample JSON Hello World response.",
-                "produces": [
-                    "application/json"
-                ],
                 "responses": {
                     "200": {
+                        "description": "A JSON object containing the Hello World message.",
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/definitions/Hello"
+                                    "$ref": "#/components/Hello"
                                 }
                             }
                         }
@@ -27,15 +25,13 @@
         "/api": {
             "get": {
                 "description": "Returns a sample JSON Hello API response.",
-                "produces": [
-                    "application/json"
-                ],
                 "responses": {
                     "200": {
+                        "description": "A JSON object containing the Hello API message.",
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "$ref": "#/definitions/HelloApi"
+                                    "$ref": "#/components/HelloApi"
                                 }
                             }
                         }
@@ -44,8 +40,7 @@
             }
         }
     },
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "definitions": {
+    "components": {
         "Hello": {
             "type": "object",
             "required": [
